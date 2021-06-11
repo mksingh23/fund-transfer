@@ -1,0 +1,36 @@
+
+<form *ngIf="!isLoggedIn" class="form-signin">
+  <div *ngIf="!showLogin">
+    <h2 class="form-signin-heading">Signup</h2>
+    <label for="inputName" class="sr-only">Name</label>
+    <input type="text" id="inputName" name="name" class="form-control" placeholder="Name"
+           [(ngModel)]="credentials.profile.name" required autofocus>
+    <label for="inputEthereumPassword" class="sr-only">Ethereum Password</label>
+    <input type="password" id="inputEthereumPassword" name="eth_password" class="form-control"
+           [(ngModel)]="credentials.eth_password" placeholder="Ethereum Password" required>
+  </div>
+  <h2 class="form-signin-heading" *ngIf="showLogin">Login</h2>
+  <label for="inputEmail" class="sr-only">Email address</label>
+  <input type="email" id="inputEmail" name="email" class="form-control" [(ngModel)]="credentials.email"
+         placeholder="Email address" required>
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="password" id="inputPassword" name="password" class="form-control" [(ngModel)]="credentials.password"
+         placeholder="Password" required>
+  <div class="toggle-form-type">
+    <a href="javascript:void(0)" (click)="showLogin = !showLogin">
+      <span *ngIf="showLogin">Create new account</span>
+      <span *ngIf="!showLogin">Login</span>
+    </a>
+    <div *ngIf="accountsService.isLoggingIn()">
+      <strong>Please wait...</strong>
+    </div>
+  </div>
+  <div>
+    <ul>
+      <li class="text-danger" *ngFor="let error of accountsService.getErrors()">
+        {{ error }}
+      </li>
+    </ul>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" (click)="showLogin?login():signup()">Submit</button>
+</form>

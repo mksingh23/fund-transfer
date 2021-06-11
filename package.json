@@ -1,0 +1,36 @@
+{
+  "name": "ether-wallet",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "@angular/animations": "^4.4.7",
+    "@angular/common": "^2.4.10",
+    "@angular/compiler": "^4.3.2",
+    "@angular/compiler-cli": "^4.3.2",
+    "@angular/forms": "^4.3.2",
+    "@angular/http": "^4.3.2",
+    "@angular/platform-browser": "^4.3.2",
+    "@angular/platform-browser-dynamic": "^4.3.2",
+    "@angular/platform-server": "^4.3.2",
+    "@angular/router": "^4.3.2",
+    "angular2-meteor": "^0.7.0",
+    "angular2-meteor-accounts-ui": "^1.0.0",
+    "angular2-meteor-polyfills": "^0.1.1",
+    "babel-runtime": "^6.20.0",
+    "meteor-node-stubs": "~0.2.4",
+    "meteor-rxjs": "^0.4.14",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^6.6.7",
+    "typescript": "^2.9.2",
+    "zone.js": "^0.8.29"
+  },
+  "devDependencies": {
+    "@angular/core": "^2.4.10",
+    "@types/meteor": "^1.4.2",
+    "@types/meteor-accounts-phone": "0.0.5",
+    "@types/underscore": "^1.8.1",
+    "meteor-typings": "^1.4.1"
+  }
+}
