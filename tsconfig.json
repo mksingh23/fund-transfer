@@ -13,7 +13,7 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "target": "es5",
-    "skipLibCheck": true,
+    
     "stripInternal": true,
     "noImplicitAny": false,
     "typeRoots": [

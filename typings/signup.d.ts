@@ -38,3 +38,6 @@ interface SignupCredentials{
 	eth_password: string;
 	profile?: any;
 }
+/*
+Need Some more edits
+*/

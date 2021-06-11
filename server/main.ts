@@ -43,3 +43,7 @@ Meteor.users.allow({
 Meteor.publish("allUsers", function () {
 	return Meteor.users.find({});
 });
+
+/*
+Need Some more edits
+*/
