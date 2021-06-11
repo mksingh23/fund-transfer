@@ -3,3 +3,6 @@
   provide their own type declarations.
  */
 declare module '*';
+/*
+These are some edits
+*/

@@ -38,7 +38,7 @@
       "info",
       "time",
       "timeEnd",
-      "trace"
+      
     ],
     "no-construct": true,
     "no-debugger": true,
